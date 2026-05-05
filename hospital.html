@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tableau Analysis</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f1f5f9;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #87ab69;
+    align-items: center;
+}
+
+nav h3 {
+    font-family: Algerian, sans-serif;
+    color: black;
+}
+
+nav a {
+    color: white;
+    font-family: 'Bradley Hand ITC', sans-serif;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* Section */
+.section {
+    padding: 60px 10%;
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    text-align: center;
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* Tag */
+.tag {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Card Title */
+.card h3 {
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+/* Card Text */
+.card p {
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Skills */
+.skills {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.skills span {
+    display: inline-block;
+    background: #0f172a;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h3>MyPortfolio</h3>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<section class="section">
+
+    <h1> Tableau Data Analysis</h1>
+    <p>
+        Interactive healthcare dashboards created using Tableau to analyze patient data,
+        financial performance, and hospital operations for better decision-making.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="patient distribution.jpg" alt="Patient Distribution">
+            <div class="tag">Patients</div>
+            <h3>Patient Distribution</h3>
+            <p>
+                Visualized patient distribution across departments, branches, and gender
+                to improve resource planning and workload management.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="revenue analysis.jpg" alt="Revenue Analysis">
+            <div class="tag">Finance</div>
+            <h3>Revenue Analysis</h3>
+            <p>
+                Analyzed billing, consultation fees, and profit margins to identify
+                high-performing departments and revenue sources.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="patient satisfaction.jpg" alt="Patient Satisfaction">
+            <div class="tag">Feedback</div>
+            <h3>Patient Satisfaction</h3>
+            <p>
+                Tracked patient ratings and identified key factors affecting satisfaction
+                such as waiting time and consultation duration.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="trend analysis.jpg" alt="Trend Analysis">
+            <div class="tag">Trends</div>
+            <h3>Trend Analysis</h3>
+            <p>
+                Identified patterns in patient visits and revenue trends to support
+                forecasting and strategic planning.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="skills">
+        <h2> Tools & Skills</h2>
+        <span>Tableau</span>
+        <span>Data Visualization</span>
+        <span>Dashboard Design</span>
+        <span>Data Analysis</span>
+        <span>KPI Tracking</span>
+    </div>
+
+</section>
+
+</body>
+</html>

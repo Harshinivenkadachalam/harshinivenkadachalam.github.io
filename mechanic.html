@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figma Website Design Project</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f1f5f9;
+}
+
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #87ab69;
+    align-items: center;
+}
+
+nav h3 {
+    font-family: Algerian, sans-serif;
+    color: black;
+}
+
+nav a {
+    color: white;
+    font-family: 'Bradley Hand ITC', sans-serif;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* Section */
+.section {
+    padding: 60px 10%;
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    text-align: center;
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Grid */
+.grid {
+    padding: 40px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Image */
+.card {
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+}
+
+.card-body {
+  padding: 10px;
+}
+/* Content */
+.card-content {
+    padding: 20px;
+}
+
+.tag {
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Skills Section */
+.skills {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+}
+
+.skills span {
+    display: inline-block;
+    background: #1e293b;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    margin: 6px;
+    font-size: 13px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h3>MyPortfolio</h3>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Figma Website Design</h1>
+    <p>
+        Designed modern UI/UX layouts using Figma, focusing on clean aesthetics,
+        user-friendly navigation, and responsive design principles.
+    </p>
+</section>
+
+<!-- Projects Grid -->
+<section class="grid">
+
+    <div class="card">
+        <img src="mechanic shop1.jpg" alt="Website Design">
+        <div class="card-content">
+            <div class="tag">UI Design</div>
+            <h3>Website Layout</h3>
+            <p>
+                Designed an engaging website with clear navigation,
+                hero section, and modern layout structure.
+            </p>
+            <a href="https://www.figma.com/design/wPHnMzmmRqGjE2N8EFP6zt/Untitled?node-id=0-1&t=TvQqYxRrphrh1kLy-1" class="btn">View Design</a>
+        </div>
+    </div>
+
+        <div class="card">
+        <img src="mobile application.jpg" alt="Mobile Design">
+        <div class="card-content">
+            <div class="tag">Responsive</div>
+            <h3>Mobile Design</h3>
+            <p>
+                Built responsive mobile layouts ensuring smooth
+                user experience across all devices.
+            </p>
+            <a href="mobile application1.jpg" class="btn">View Design</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- Skills -->
+<section class="skills">
+    <h2>Tools & Skills</h2>
+    <span>Figma</span>
+    <span>UI/UX Design</span>
+    <span>Wireframing</span>
+    <span>Prototyping</span>
+    <span>Responsive Design</span>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Projects</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: black;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #87ab69;
+    align-items: center;
+}
+
+nav h3 {
+    font-family: Algerian, sans-serif;
+    color: black;
+}
+
+nav a {
+    color: white;
+    font-family: 'Bradley Hand ITC', sans-serif;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Project Grid */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 50px;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 45px;
+}
+
+.hero span {
+    color: black;
+}
+
+.hero p {
+    font-family: Sitka Text, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    color: black;
+p.small {
+  line-height: 0.7;
+}
+
+p.big {
+  line-height: 1.8;
+}
+}
+
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Content */
+.card-content {
+    font-family:Sitka Text, sans-serif;
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Button */
+.btn {
+    font-family:Times new roman , ans-serif;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 10px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>MyPortfolio</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- Heading -->
+<h1>My Projects</h1>
+
+<!-- Projects Section -->
+<section class="projects">
+
+    <!-- Project 1 -->
+    <div class="card">
+        <img src="data analysis.png" alt="Project 1">
+        <div class="card-content">
+            <h3>Sales Data Analysis</h3>
+            <p>Analyzed sales dataset of an hospital by its trends and sales.</p>
+            <a href="hospital.html" class="btn">View Project</a>
+        </div>
+    </div>
+
+    <!-- Project 2. -->
+    <div class="card">
+        <img src="mechanic shop.jpg" alt="Project 3">
+        <div class="card-content">
+            <h3>UI/UX</h3>
+            <p>UI/UX design for both web and mobile applications.</p>
+            <a href="mechanic.html" class="btn">View Project</a>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
